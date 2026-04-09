@@ -344,24 +344,33 @@ spring:
 // - GET /trips
 
 // 5. E2E
+
 // scénario :
+
 // create user -> create trip -> join -> start -> vérifier état
 
 // =========================
 // CAS OBLIGATOIRES
 // =========================
 // - trip full
+
 // - premium refusé
+
 // - trip déjà démarré
+
 // - user inexistant
+
 // - trip inexistant
+
 // - capacité invalide
 
 // =========================
 // BONUS
 // =========================
 // - tests paramétrés
+
 // - couverture branches
+
 // - test concurrence
 
 // =========================
