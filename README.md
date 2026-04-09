@@ -87,14 +87,18 @@ Vous ne devez pas modifier le code métier, uniquement écrire les tests.
 
 
 // =========================
+
 // EXAMEN TECHNIQUE - 2H30
+
 // =========================
 // Application : MotoTrip 
 // Objectif : écrire TOUS les tests (unitaires, intégration, REST, E2E)
 // NE PAS modifier le code métier
 
 // =========================
+
 // DEPENDENCIES (pom.xml)
+
 // =========================
 ```xml
 <dependencies>
@@ -120,7 +124,9 @@ Vous ne devez pas modifier le code métier, uniquement écrire les tests.
 ```
 
 // =========================
+
 // ENTITIES
+
 // =========================
 ```java
 @Entity
@@ -200,7 +206,9 @@ public class Trip {
 ```
 
 // =========================
+
 // REPOSITORIES
+
 // =========================
 ```java
 @Repository
@@ -210,7 +218,9 @@ public interface UserRepository extends JpaRepository<User, Long> {}
 public interface TripRepository extends JpaRepository<Trip, Long> {}
 ```
 // =========================
+
 // SERVICE
+
 // =========================
 
 ```java
@@ -260,7 +270,9 @@ public class TripService {
 ```
 
 // =========================
+
 // CONTROLLER
+
 // =========================
 
 ```java
@@ -306,7 +318,9 @@ public class TripController {
 ```
 
 // =========================
+
 // H2 CONFIG
+
 // =========================
 ```yml
 spring:
@@ -318,29 +332,43 @@ spring:
 ```
 
 // =========================
+
 // SUJET ETUDIANTS
+
 // =========================
 
 // Implémenter TOUS les tests :
 
 // 1. UNITAIRES
+
 // - User (points, premium)
+
 // - Trip (join, start, règles)
 
 // 2. SERVICE (MOCKITO)
+
 // - createTrip
+
 // - joinTrip
+
 // - erreurs (user/trip inexistants)
 
 // 3. INTEGRATION (H2)
+
 // - persistance
+
 // - relations User/Trip
 
 // 4. TEST REST (MockMvc)
+
 // - POST /users
+
 // - POST /trips
+
 // - POST /join
+
 // - POST /start
+
 // - GET /trips
 
 // 5. E2E
@@ -350,8 +378,11 @@ spring:
 // create user -> create trip -> join -> start -> vérifier état
 
 // =========================
+
 // CAS OBLIGATOIRES
+
 // =========================
+
 // - trip full
 
 // - premium refusé
@@ -365,8 +396,11 @@ spring:
 // - capacité invalide
 
 // =========================
+
 // BONUS
+
 // =========================
+
 // - tests paramétrés
 
 // - couverture branches
@@ -374,6 +408,8 @@ spring:
 // - test concurrence
 
 // =========================
+
 // FIN
+
 // =========================
 
