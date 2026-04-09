@@ -86,20 +86,16 @@ Vous ne devez pas modifier le code métier, uniquement écrire les tests.
 
 
 
-// =========================
 
-// EXAMEN TECHNIQUE - 2H30
+## EXAMEN TECHNIQUE - 2H30
 
-// =========================
-// Application : MotoTrip 
-// Objectif : écrire TOUS les tests (unitaires, intégration, REST, E2E)
-// NE PAS modifier le code métier
+- Application : MotoTrip 
+- Objectif : écrire TOUS les tests (unitaires, intégration, REST, E2E)
+- NE PAS modifier le code métier
 
-// =========================
 
-// DEPENDENCIES (pom.xml)
+ DEPENDENCIES (pom.xml)
 
-// =========================
 ```xml
 <dependencies>
     <dependency>
@@ -123,11 +119,9 @@ Vous ne devez pas modifier le code métier, uniquement écrire les tests.
 </dependencies>
 ```
 
-// =========================
 
-// ENTITIES
+ETITIES
 
-// =========================
 ```java
 @Entity
 public class User {
@@ -205,11 +199,9 @@ public class Trip {
 }
 ```
 
-// =========================
 
-// REPOSITORIES
+REPOSITORIES
 
-// =========================
 ```java
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {}
@@ -217,11 +209,9 @@ public interface UserRepository extends JpaRepository<User, Long> {}
 @Repository
 public interface TripRepository extends JpaRepository<Trip, Long> {}
 ```
-// =========================
 
-// SERVICE
+SERVICE
 
-// =========================
 
 ```java
 @Service
@@ -269,11 +259,8 @@ public class TripService {
 }
 ```
 
-// =========================
+CONTROLLER
 
-// CONTROLLER
-
-// =========================
 
 ```java
 @RestController
@@ -317,11 +304,9 @@ public class TripController {
 }
 ```
 
-// =========================
 
-// H2 CONFIG
+H2 CONFIG
 
-// =========================
 ```yml
 spring:
   datasource:
