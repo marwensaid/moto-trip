@@ -413,3 +413,57 @@ spring:
 
 // =========================
 
+ =========================
+ SUJET ETUDIANTS
+ =========================
+
+ Implémenter TOUS les tests :
+
+ 1. UNITAIRES
+ - User (points, premium)
+ - Trip (join, start, règles)
+
+ 2. SERVICE (MOCKITO)
+ - createTrip
+ - joinTrip
+ - erreurs (user/trip inexistants)
+
+ 3. INTEGRATION (H2)
+ - persistance
+ - relations User/Trip
+
+ 4. TEST REST (MockMvc)
+ - POST /users
+ - POST /trips
+ - POST /join
+ - POST /start
+ - GET /trips
+
+ 5. E2E
+ scénario :
+ create user -> create trip -> join -> start -> vérifier état
+
+ =========================
+ CAS OBLIGATOIRES
+ =========================
+ - trip full
+ - premium refusé
+ - trip déjà démarré
+ - user inexistant
+ - trip inexistant
+ - capacité invalide
+
+ =========================
+ BONUS
+ =========================
+ - tests paramétrés
+ - couverture branches
+ - test concurrence
+
+ =========================
+ FIN
+ =========================
+
+
+
+
